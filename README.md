@@ -17,22 +17,6 @@ Automation: Selenium
 Frontend: HTML, CSS
 Data export: CSV
 
-Project Structure:
-
-├── app.py                 # Flask app (routes, form handling)
-├── automation.py           # Selenium automation logic
-├── templates/
-│   └── index.html          # Dashboard UI
-├── static/
-│   └── style.css
-├── logs/
-│   └── automation.log      # Step-by-step logs
-├── output/
-│   └── employees.csv       # Extracted employee data
-├── .env                     # Credentials (not committed)
-├── requirements.txt
-└── README.md
-
 Setup:
 
 Clone the repo and install dependencies:
