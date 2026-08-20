@@ -4,30 +4,44 @@ A simple web dashboard that triggers Selenium automation on the OrangeHRM demo s
 
 Features:
 
-HTML/CSS dashboard (Flask backend) to enter login credentials and employee details
-One-click "Submit" triggers the automation flow
-Shows inserted employee data and success/failure status back on the dashboard
-Logs every automation step
-Exports extracted employee data to CSV
+HTML/CSS dashboard (Flask backend) to enter login credentials and employee details.
+
+One-click "Submit" triggers the automation flow.
+
+Shows inserted employee data and success/failure status back on the dashboard.
+
+Logs every automation step.
+
+Exports extracted employee data to CSV.
+
 
 Tech Stack:
 
 Backend: Python, Flask
+
 Automation: Selenium
+
 Frontend: HTML, CSS
+
 Data export: CSV
+
 
 Setup:
 
 Clone the repo and install dependencies:
 bash
+
    pip install -r requirements.txt
+   
 Add your credentials to a .env file:
+
    ORANGEHRM_USERNAME=Admin
    ORANGEHRM_PASSWORD=admin123
+   
 Make sure Chrome + ChromeDriver (or your chosen browser driver) is installed and matches your browser version.
 Running the App
 bash
+
 python app.py
 
 Then open http://localhost:5000 in your browser.
