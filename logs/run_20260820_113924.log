@@ -1,0 +1,11 @@
+2026-08-20 11:39:24,185 | INFO | Starting automation run
+2026-08-20 11:39:25,609 | INFO | Opening OrangeHRM login page
+2026-08-20 11:39:34,680 | INFO | Logging in as user 'Admin'
+2026-08-20 11:39:55,154 | INFO | Login successful
+2026-08-20 11:39:55,154 | INFO | Navigating to PIM module
+2026-08-20 11:40:16,260 | INFO | PIM page loaded
+2026-08-20 11:40:16,260 | INFO | Opening Add Employee form
+2026-08-20 11:40:26,091 | INFO | Submitting new employee: arshh s (ID: 8451)
+2026-08-20 11:40:58,980 | INFO | Saved failure screenshot to C:\Users\nandh\OneDrive\Desktop\orange_hrm\logs\add_employee_failure.png
+2026-08-20 11:40:58,988 | ERROR | Current URL at failure: https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/175
+2026-08-20 11:40:58,988 | ERROR | Automation failed: Could not verify employee creation. See add_employee_failure.png in C:\Users\nandh\OneDrive\Desktop\orange_hrm\logs.

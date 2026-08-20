@@ -1,0 +1,4 @@
+2026-08-20 09:41:24,156 | INFO | Starting automation run
+2026-08-20 09:41:29,068 | INFO | Opening OrangeHRM login page
+2026-08-20 09:41:31,875 | INFO | Logging in as user 'Admin'
+2026-08-20 09:41:47,655 | ERROR | Automation failed: Login failed - check username/password

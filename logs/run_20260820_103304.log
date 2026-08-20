@@ -1,0 +1,8 @@
+2026-08-20 10:33:04,764 | INFO | Starting automation run
+2026-08-20 10:33:06,154 | INFO | Opening OrangeHRM login page
+2026-08-20 10:33:08,407 | INFO | Logging in as user 'Admin'
+2026-08-20 10:33:11,059 | INFO | Login successful
+2026-08-20 10:33:11,059 | INFO | Navigating to PIM module
+2026-08-20 10:33:41,556 | INFO | Saved failure screenshot to C:\Users\nandh\OneDrive\Desktop\orange_hrm\logs\pim_failure.png
+2026-08-20 10:33:41,560 | ERROR | Current URL at failure: https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList
+2026-08-20 10:33:41,563 | ERROR | Automation failed: Could not load PIM / Employee list page in time. See pim_failure.png in C:\Users\nandh\OneDrive\Desktop\orange_hrm\logs. Current URL was: https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList

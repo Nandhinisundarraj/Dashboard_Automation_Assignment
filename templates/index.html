@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OrangeHRM Automation Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>OrangeHRM Automation Dashboard</h1>
+    <p class="subtitle">Enter login and employee details, then run the automation.</p>
+
+    <form action="/run-automation" method="POST" class="dashboard-form">
+
+        <fieldset>
+            <legend>Login Credentials</legend>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"
+                   value="{{ form_data.username if form_data else '' }}" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employee Details</legend>
+
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name"
+                   value="{{ form_data.first_name if form_data else '' }}" required>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name"
+                   value="{{ form_data.last_name if form_data else '' }}" required>
+
+            <label for="employee_id">Employee ID (optional)</label>
+            <input type="text" id="employee_id" name="employee_id"
+                   value="{{ form_data.employee_id if form_data else '' }}">
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Run Automation</button>
+    </form>
+
+    {% if result %}
+    <div class="result-section">
+        <h2>Automation Result</h2>
+
+        <div class="status {{ 'status-success' if result.success else 'status-fail' }}">
+            {{ "✅ SUCCESS" if result.success else "❌ FAILED" }} — {{ result.message }}
+        </div>
+
+        {% if result.employee_added %}
+        <h3>Employee Inserted</h3>
+        <table class="data-table">
+            <tr><th>First Name</th><th>Last Name</th><th>Employee ID</th></tr>
+            <tr>
+                <td>{{ result.employee_added.first_name }}</td>
+                <td>{{ result.employee_added.last_name }}</td>
+                <td>{{ result.employee_added.employee_id or "Auto-generated" }}</td>
+            </tr>
+        </table>
+        {% endif %}
+
+        {% if result.employee_table %}
+        <h3>Extracted Employee List ({{ result.employee_table|length }} rows)</h3>
+        <div class="table-scroll">
+            <table class="data-table">
+                {% for row in result.employee_table %}
+                <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endif %}
+
+        {% if result.csv_file %}
+        <p>Data saved to: <code>output/{{ result.csv_file }}</code></p>
+        {% endif %}
+
+        {% if result.log_file %}
+        <p>Log saved to: <code>logs/{{ result.log_file }}</code></p>
+        {% endif %}
+
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

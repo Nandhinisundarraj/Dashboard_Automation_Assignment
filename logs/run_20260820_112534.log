@@ -1,0 +1,19 @@
+2026-08-20 11:25:34,460 | INFO | Starting automation run
+2026-08-20 11:25:34,601 | INFO | Login successful
+2026-08-20 11:25:34,602 | INFO | Navigating to PIM module
+2026-08-20 11:25:35,751 | INFO | Opening OrangeHRM login page
+2026-08-20 11:25:37,850 | INFO | PIM page loaded
+2026-08-20 11:25:37,850 | INFO | Opening Add Employee form
+2026-08-20 11:25:38,987 | INFO | Submitting new employee: joo s (ID: 7865)
+2026-08-20 11:25:42,644 | INFO | Logging in as user 'Admin'
+2026-08-20 11:25:49,692 | INFO | Employee creation verified successfully
+2026-08-20 11:25:49,692 | INFO | Extracting employee list data
+2026-08-20 11:25:49,983 | INFO | Login successful
+2026-08-20 11:25:49,984 | INFO | Navigating to PIM module
+2026-08-20 11:25:56,720 | INFO | PIM page loaded
+2026-08-20 11:25:56,720 | INFO | Opening Add Employee form
+2026-08-20 11:25:57,864 | INFO | Submitting new employee: joo s (ID: 7865)
+2026-08-20 11:25:58,421 | INFO | Extracted 20 employee rows
+2026-08-20 11:25:58,422 | INFO | Saved extracted data to employees_20260820_112558.csv
+2026-08-20 11:25:58,422 | INFO | Logging out
+2026-08-20 11:26:09,410 | INFO | Logout successful. Automation run complete.

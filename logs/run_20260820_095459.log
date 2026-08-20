@@ -1,0 +1,5 @@
+2026-08-20 09:54:59,989 | INFO | Starting automation run
+2026-08-20 09:55:03,032 | INFO | Opening OrangeHRM login page
+2026-08-20 09:55:10,916 | INFO | Logging in as user 'Admin'
+2026-08-20 09:55:31,642 | INFO | Saved failure screenshot to C:\Users\nandh\OneDrive\Desktop\orange_hrm\logs\login_failure.png
+2026-08-20 09:55:31,642 | ERROR | Automation failed: Login failed - no error banner found on page. The dashboard heading may have changed, or the page did not finish loading in time. See login_failure.png in C:\Users\nandh\OneDrive\Desktop\orange_hrm\logs for a screenshot of what the browser actually saw.
